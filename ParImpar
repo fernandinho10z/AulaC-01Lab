@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Soma 
+{
+    class Program 
+    {
+        static void Main (string [] args)
+        {
+            Console.Write("Numero: ");
+            int n = int.Parse(Console.ReadLine()); //Parse é para conversao
+            if (n % 2 == 0)
+            {
+                Console.WriteLine("Numero Par {0}", n);
+            }
+            else
+            {
+                Console.WriteLine("Numero Impar {0}", n);
+
+            }
+       }
+    }
+}         
