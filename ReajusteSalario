@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Soma 
+{
+    class Program 
+    {
+        static void Main (string [] args)
+        {
+            Console.Write ("Salario: ");
+            float s = float.Parse (Console.ReadLine());
+            float s_novo = s * 1.16f; //f para interpretar como float
+            Console.WriteLine("Seu salario é {0}", s);
+            Console.WriteLine("Com o ajuste de 16%, ficará em {0}", s_novo);
+            Console.WriteLine(s_novo.ToString("#.##"));
+
+       }
+    }
+}         
