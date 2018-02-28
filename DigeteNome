@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace DigiteNome
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Nome: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine ("Ola {0}, bom dia!", nome);
+       }
+    }
+}         
