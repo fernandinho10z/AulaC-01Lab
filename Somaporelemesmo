@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+//utilizando o for para soma de um numero por ele mesmo
+
+namespace Somaporelemesmo
+{
+    class Program 
+    {
+        static void Main (string [] args)
+        {
+            Console.Write("Numero: ");
+            int n = int.Parse(Console.ReadLine());
+            int soma = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                soma += i;
+            }
+            Console.WriteLine("O valor é {0}", soma);
+        }
+    }
+}
