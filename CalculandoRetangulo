@@ -1,0 +1,31 @@
+Usar a "CriandoClasse"
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Exemplo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Retangulo r = new Retangulo();
+
+            r.base_ = 10;
+            r.altura = 10;        
+            Retangulo r2 = new Retangulo();
+
+            r2.base_ = 8;
+            r2.altura = 6;
+
+            float a1 = r.CalcularArea();
+            float a2 = r2.CalcularArea();
+            Console.WriteLine("Area 1 = {0}", a1);
+            Console.WriteLine("Area 2 = {0}", a2);
+           
+
+        }
+    }
+}
