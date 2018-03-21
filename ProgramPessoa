@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+    class Pessoa
+    {
+       private string nome;
+       
+        private DateTime DataNascimento;
+
+        public Pessoa (string nome, DateTime DataNascimento)
+        {
+            this.nome =nome;
+            this.DataNascimento = DataNascimento;
+        }
+        public int ObterIdade()
+        {
+            DateTime hoje = DateTime.Now;
+            int idade = hoje.Year - DataNascimento.Year;
+            if (hoje.Month < DataNascimento.Month || (hoje.Month == DataNascimento.Month && hoje.Day < DataNascimento.Day)) {
+                idade --;
+            }
+            return idade;
+        }
+        public string Nome
+        {
+            get {return nome;}
+            set {nome = value;}
+        }
+        public DateTime dataNascimento
+        {
+            get {return DataNascimento;}
+            set {DataNascimento = value;}
+        }
+    }
+}
