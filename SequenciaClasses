@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+//só pode usar o static quando precisar determinar um atributo
+//ou quando voce ja tem uma classe definida. Exemplo "using system" voce tem o metodo "console" é static
+
+namespace ConsoleApplication3
+{
+    class Exemplo
+    {
+        private static int seq = 0;
+        private int nro;
+
+        public Exemplo()
+        {
+            seq = seq + 1;
+            nro = seq;
+        }
+        public int GetNro()
+        {
+            return nro;
+        }
+        public static int ProxNro()
+        {
+            return seq + 1;
+        }
+    }
+}
