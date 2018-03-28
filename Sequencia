@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Exemplo e1 = new Exemplo();
+            Exemplo e2 = new Exemplo();
+            Exemplo e3 = new Exemplo();
+            Console.WriteLine(e1.GetNro());
+            Console.WriteLine(e2.GetNro());
+            Console.WriteLine(e3.GetNro());
+            int prox = Exemplo.ProxNro();
+            Console.WriteLine("Proximo: {0}", prox);
+        }
+    }
+}
